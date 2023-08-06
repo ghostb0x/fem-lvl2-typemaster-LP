@@ -51,22 +51,26 @@ table {
 html {
   --color-white: ${COLORS.white};
   --color-offblack: ${COLORS.offblack};
-  --color-gray-100: ${COLORS.gray[100]};
-  --color-gray-300: ${COLORS.gray[300]};
-  --color-gray-500: ${COLORS.gray[500]};
-  --color-gray-700: ${COLORS.gray[700]};
-  --color-gray-900: ${COLORS.gray[900]};
-  --color-primary: ${COLORS.primary};
-  --color-secondary: ${COLORS.secondary};
-  --color-urgent: ${COLORS.urgent};
+  --color-darkGray: ${COLORS.darkGray};
+  --color-lightGray: ${COLORS.lightGray};
+  --color-darkOrange: ${COLORS.darkOrange};
+  --color-lightOrange: ${COLORS.lightOrange};
 
-  --font-weight-normal: ${WEIGHTS.normal};
   --font-weight-medium: ${WEIGHTS.medium};
   --font-weight-bold: ${WEIGHTS.bold};
+  --font-weight-black: ${WEIGHTS.black};
 
-  --font-family-serif: ${FAMILIES.serif};
-  --font-family-sans-serif: ${FAMILIES.sansSerif};
-  --font-family-logo: ${FAMILIES.logo};
+  /* font shorthand follows pattern: 
+  font-style font-weight font-size/line-height font-family */
+  --font-h1-desktop: normal var(--font-weight-black) 3.5rem/3.5rem Barlow;
+  --font-h1-mobile: normal var(--font-weight-black) 3rem/3rem Barlow;
+  --font-h2: normal var(--font-weight-black) 2rem/2.25rem Barlow;
+  --font-h3: normal var(--font-weight-black) 1.5rem/1.75rem Barlow;
+
+  --font-body: normal var(--font-weight-medium) 1rem/1.625rem Barlow;
+  --font-hero-body-desktop: normal var(--font-weight-medium) 1.125rem/1.625rem Barlow;
+
+  --font-button: normal var(--font-weight-bold) 1rem/1.625rem Barlow;
 }
 
 
