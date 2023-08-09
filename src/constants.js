@@ -28,7 +28,3 @@ export const QUERIES = {
       (max-width: ${(BREAKPOINTS.laptopMin - 1) / 16}rem)`,
 };
 
-export const FAMILIES = {
-  sansSerif:
-   ,
-};

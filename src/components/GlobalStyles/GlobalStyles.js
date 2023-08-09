@@ -105,7 +105,7 @@ html, body, #root {
 
 body {
   background-color: var(--color-gray-100);
-  font-family: 'Crimson Pro', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 /*
