@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button';
 import { styled } from 'styled-components/macro';
+import { QUERIES } from '../../constants';
 
 function Header() {
   return (
@@ -16,6 +17,12 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 24px;
+  padding-bottom: 0px;
+
+  @media ${QUERIES.tabletAndUp} {
+    padding: 40px;
+    padding-bottom: 0px;
+  }
 `;
 
 const Logo = styled.img`
@@ -32,6 +39,12 @@ const HeaderButton = styled(Button)`
   &:hover {
     color: var(--color-white);
     background-color: var(--color-offblack);
+  }
+
+  @media ${QUERIES.tabletAndUp} {
+    width: 175px;
+    height: 58px;
+    
   }
 `;
 

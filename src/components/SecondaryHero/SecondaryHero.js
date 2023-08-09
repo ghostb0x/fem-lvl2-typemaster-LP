@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import { QUERIES } from '../../constants';
 
 function SecondaryHero() {
   return (
@@ -35,11 +36,18 @@ function SecondaryHero() {
 const SecondaryHeroWrapper = styled.div``;
 
 const ImagesWrapper = styled.div`
+  margin-top: 24px;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr) 24px;
   width: 100%;
-  margin-top: 24px;
-  margin-right: 24px;
+
+  @media ${QUERIES.tabletAndUp} {
+    width: revert;
+    margin: 40px 40px 0px 40px;
+    grid-template-columns: minmax(0, 0.96fr) minmax(0, 2fr);
+    grid-template-rows: 320px;
+    gap: 30px;
+  }
 `;
 
 const PhoneAndKeyboardWrapper = styled.picture`
@@ -59,6 +67,11 @@ const OrangeOverlay = styled.div`
   width: 100%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  @media ${QUERIES.tabletAndUp} {
+    left: revert;
+    top: revert;
+  }
 `;
 
 const PhoneAndKeyboard = styled.img`
@@ -82,6 +95,16 @@ const SecondaryHeroTextSection = styled.div`
   align-items: center;
   gap: 24px;
   margin: 75px 24px;
+
+  @media ${QUERIES.tabletAndUp} {
+    margin: 72px 40px 0px 40px;
+    text-align: start;
+    display: grid;
+    grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.5fr);
+    grid-template-rows: 108px;
+    gap: 30px;
+    
+  }
 `;
 
 const H2 = styled.h2`
@@ -89,7 +112,6 @@ const H2 = styled.h2`
   color: var(--color-offblack);
   text-transform: uppercase;
   width: min-content;
-
 `;
 
 const P = styled.p`
