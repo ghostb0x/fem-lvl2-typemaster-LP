@@ -1,5 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
+import { QUERIES } from "../../constants";
 
 function Footer() {
   return (
@@ -14,6 +15,12 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   padding: 96px 50px 50px 50px;
+
+  @media ${QUERIES.tabletAndUp} {
+    padding: 0 0 43px 0;
+    margin-top: 142px;
+    
+  }
 `;
 
 const P1 = styled.p `

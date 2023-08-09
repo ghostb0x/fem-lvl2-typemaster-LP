@@ -68,7 +68,7 @@ const CTAWrapper = styled.div`
 
   @media ${QUERIES.tabletAndUp} {
     justify-content: space-between;
-    gap: 0;
+    gap: 20px;
   }
 `;
 

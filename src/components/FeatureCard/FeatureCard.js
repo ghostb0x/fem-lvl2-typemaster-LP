@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import { QUERIES } from '../../constants';
 
 function FeatureCard({
   id,
@@ -29,6 +30,13 @@ const CardWrapper = styled.div`
   justify-content: center;
   text-align: center;
   gap: 24px;
+
+  @media ${QUERIES.tabletAndUp} {
+    align-items: start;
+    justify-content: flex-start;
+    text-align: start;
+    
+  }
 `;
 
 const IconBackground = styled.div`
