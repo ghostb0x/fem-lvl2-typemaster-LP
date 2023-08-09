@@ -23,6 +23,7 @@ const FeatureCardsWrapper = styled.div`
   align-items: center;
   gap: 64px;
   margin: 24px;
+  margin-bottom: 0px;
 `;
 
 export default FeatureCards;
