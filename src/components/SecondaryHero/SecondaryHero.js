@@ -36,11 +36,10 @@ const SecondaryHeroWrapper = styled.div``;
 
 const ImagesWrapper = styled.div`
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 2fr);
-  grid-template-rows: 186px;
-  gap: 24px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr) 24px;
   width: 100%;
   margin-top: 24px;
+  margin-right: 24px;
 `;
 
 const PhoneAndKeyboardWrapper = styled.picture`
@@ -55,7 +54,7 @@ const OrangeOverlay = styled.div`
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -24px;
   height: 100%;
   width: 100%;
   border-top-right-radius: 20px;

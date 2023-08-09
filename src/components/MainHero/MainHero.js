@@ -18,18 +18,19 @@ function MainHero() {
         </CTAWrapper>
       </HeroContent>
       <HeroImageWrapper>
-        <HeroImage src='./assets/mobile/image-keyboard.jpg' alt='The Typemaster Keyboard - color image'/>
+        <HeroImage
+          src="./assets/mobile/image-keyboard.jpg"
+          alt="The Typemaster Keyboard - color image"
+        />
       </HeroImageWrapper>
     </HeroWrapper>
   );
 }
 
-const HeroWrapper = styled.div`
-
-`;
+const HeroWrapper = styled.div``;
 
 const HeroContent = styled.div`
-  padding: 40px 24px 66px;
+  padding: 40px 24px 66px 24px;
 `;
 
 const H1 = styled.h1`
@@ -63,15 +64,16 @@ const CTASpan = styled.span`
 `;
 
 const HeroImageWrapper = styled.picture`
-  margin-left: 24px;
-  overflow: clip;
-  
-  `;
+  display: flex;
+  overflow-x: clip;
+`;
 
 const HeroImage = styled.img`
   width: 100%;
-  border-radius: 20px;
+  margin-left: 24px;
+  /* transform: translateX(24px); */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 `;
-
 
 export default MainHero;

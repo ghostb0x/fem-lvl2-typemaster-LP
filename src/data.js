@@ -14,14 +14,14 @@ export const FEATURE_CARDS = [
       description:
         'Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. Simply plug the unifying receiver into your computer.',
       startUrl: 'blank',
-      iconSrc: '/assets/shared/icon-bluetooth.svg',
+      iconSrc: './assets/shared/icon-bluetooth.svg',
       iconAltText: 'Bluetooth icon',
     },
     {
       id: '3',
       title: 'High Capacity Battery',
       description:
-        "Equipped with a long-lasting built-in battery, you'll never havae to spend a dime on replaceable onsecuritypolicyviolation. Enjoy 40 hours of usage time between charges.",
+        "Equipped with a long-lasting built-in battery, you'll never havae to spend a dime on replaceable ones. Enjoy 40 hours of usage time between charges.",
       startUrl: 'blank',
       iconSrc: './assets/shared/icon-battery.svg',
       iconAltText: 'Battery icon',
@@ -32,7 +32,8 @@ export const FEATURE_CARDS = [
       description:
         'Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps you type in low light conditions.',
       startUrl: 'blank',
-      iconSrc: '/assets/shared/icon-light.svg',
+      iconSrc: './assets/shared/icon-light.svg',
       iconAltText: 'Lightbulb icon',
+    },
 
 ]
