@@ -107,6 +107,7 @@ const OrangeOverlay = styled.div`
   @media ${QUERIES.tabletAndUp} {
     left: revert;
     top: revert;
+    border-radius: 20px;
   }
 `;
 
