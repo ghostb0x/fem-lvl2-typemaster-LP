@@ -19,6 +19,14 @@ function MainHero() {
         </CTAWrapper>
       </HeroContent>
       <HeroImageWrapper>
+        <source
+          type="image/jpg"
+          srcSet="
+            ./assets/mobile/image-keyboard.jpg 1x,
+            ./assets/tablet/image-keyboard.jpg 2x,
+            ./assets/desktop/image-keyboard.jpg 3x
+          "
+        />
         <HeroImage
           src="./assets/mobile/image-keyboard.jpg"
           alt="The Typemaster Keyboard - color image"
@@ -102,7 +110,7 @@ const CTAWrapper = styled.div`
 const HeroButton = styled(Button)`
   color: var(--color-white);
   background-color: var(--color-darkOrange);
-  
+
   &:hover {
     background-color: var(--color-lightOrange);
   }

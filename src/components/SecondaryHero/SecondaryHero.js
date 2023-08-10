@@ -12,6 +12,14 @@ function SecondaryHero() {
         </PhoneAndKeyboardWrapper>
 
         <GlassAndKeyboardWrapper>
+          <source
+            type="image/jpg"
+            srcSet="
+            ./assets/mobile/image-glass-and-keyboard.jpg 1x,
+            ./assets/tablet/image-glass-and-keyboard.jpg 2x,
+            ./assets/desktop/image-glass-and-keyboard.jpg 3x
+          "
+          />
           <GlassAndKeyboard
             src="./assets/mobile/image-glass-and-keyboard.jpg"
             alt="The Typemaster Keyboard with a glass"
@@ -80,7 +88,11 @@ const PhoneAndKeyboardWrapper = styled.picture`
 
 const OrangeOverlay = styled.div`
   background-color: var(--color-darkOrange);
-  background-image: url('./assets/mobile/image-phone-and-keyboard.jpg');
+  background-image: image-set(
+    url('./assets/mobile/image-phone-and-keyboard.jpg') 1x,
+    url('./assets/tablet/image-phone-and-keyboard.jpg') 2x,
+    url('./assets/desktop/image-phone-and-keyboard.jpg') 3x
+  );
   background-size: cover;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
