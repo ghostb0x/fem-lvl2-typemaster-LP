@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/fem-jr-typemasterLP/static/js/main.68797b4d.js",
-    "index.html": "/fem-jr-typemasterLP/index.html",
-    "main.68797b4d.js.map": "/fem-jr-typemasterLP/static/js/main.68797b4d.js.map"
+    "main.js": "/fem-lvl2-typemaster-LP/static/js/main.e58b47a6.js",
+    "index.html": "/fem-lvl2-typemaster-LP/index.html",
+    "main.e58b47a6.js.map": "/fem-lvl2-typemaster-LP/static/js/main.e58b47a6.js.map"
   },
   "entrypoints": [
-    "static/js/main.68797b4d.js"
+    "static/js/main.e58b47a6.js"
   ]
 }
