@@ -6,7 +6,9 @@ import { QUERIES } from '../../constants';
 function Header() {
   return (
     <Wrapper>
-      <Logo src='./assets/shared/logo.svg' alt='TM company Logo - Click to visit Homepage'
+      <Logo
+        src="./assets/shared/logo.svg"
+        alt="TM company Logo - Click to visit Homepage"
       />
       <HeaderButton>Pre-Order Now</HeaderButton>
     </Wrapper>
@@ -23,14 +25,16 @@ const Wrapper = styled.div`
     padding: 40px;
     padding-bottom: 0px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding: 55px 165px 0px 165px;
+  }
 `;
 
 const Logo = styled.img`
   width: 40px;
   height: 40px;
-
 `;
-
 
 const HeaderButton = styled(Button)`
   color: var(--color-offblack);
@@ -44,7 +48,6 @@ const HeaderButton = styled(Button)`
   @media ${QUERIES.tabletAndUp} {
     width: 175px;
     height: 58px;
-    
   }
 `;
 

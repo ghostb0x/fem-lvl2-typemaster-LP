@@ -24,6 +24,10 @@ function MainHero() {
           alt="The Typemaster Keyboard - color image"
         />
       </HeroImageWrapper>
+      <DecorativeSquare
+        src="./assets/shared/pattern-square.svg"
+      />
+      
     </HeroWrapper>
   );
 }
@@ -35,6 +39,14 @@ const HeroWrapper = styled.div`
     grid-template-columns: 6fr 5fr;
     gap: 70px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: 83px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 130px;
+    gap: 30px;
+    margin-left: 165px;
+    overflow-x: clip;
+  }
 `;
 
 const HeroContent = styled.div`
@@ -43,12 +55,21 @@ const HeroContent = styled.div`
   @media ${QUERIES.tabletAndUp} {
     padding: 60px 0 60px 40px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding: 60px 95px 108px 0;
+  }
 `;
+
 
 const H1 = styled.h1`
   font: var(--font-h1-mobile);
   color: var(--color-offblack);
   text-transform: uppercase;
+
+  @media ${QUERIES.laptopAndUp} {
+    font: var(--font-h1-desktop);
+  }
 `;
 
 const Paragraph = styled.p`
@@ -58,6 +79,10 @@ const Paragraph = styled.p`
 
   @media ${QUERIES.tabletAndUp} {
     margin: 34px 0 40px 0;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    font: var(--font-hero-body-desktop);
   }
 `;
 
@@ -109,6 +134,25 @@ const HeroImage = styled.img`
     object-fit: cover;
     object-position: 0% 0%;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    border-radius: 20px;
+  }
+`;
+
+const DecorativeSquare = styled.img`
+  display: none;
+  @media ${QUERIES.tabletAndUp} {
+    display: none;
+    
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    display: block;
+
+    
+  }
+
 `;
 
 export default MainHero;
