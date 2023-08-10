@@ -2,7 +2,7 @@
   "name": "new-app-name",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ghostb0x.github.io/fem-jr-typemasterLP",
+  "homepage": "https://ghostb0x.github.io/fem-lvl2-typemaster-LP",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
