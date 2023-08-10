@@ -102,6 +102,10 @@ const CTAWrapper = styled.div`
 const HeroButton = styled(Button)`
   color: var(--color-white);
   background-color: var(--color-darkOrange);
+  
+  &:hover {
+    background-color: var(--color-lightOrange);
+  }
 
   @media ${QUERIES.tabletAndUp} {
     min-width: 175px;

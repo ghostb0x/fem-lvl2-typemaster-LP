@@ -37,7 +37,6 @@ const SecondaryHeroWrapper = styled.div`
     display: grid;
     grid-template-columns: 135px minmax(0, 6.66fr) minmax(0, 3.333fr);
     gap: 30px;
-    overflow-x: clip;
   }
 `;
 
