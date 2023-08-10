@@ -32,7 +32,7 @@ function MainHero() {
           alt="The Typemaster Keyboard - color image"
         />
       </HeroImageWrapper>
-      <DecorativeSquare src="./assets/shared/pattern-square.svg" />
+      <DecorativeSquare src="./assets/shared/pattern-square.svg" alt="" />
     </HeroWrapper>
   );
 }

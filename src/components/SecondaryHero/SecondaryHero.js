@@ -5,7 +5,7 @@ import { QUERIES } from '../../constants';
 function SecondaryHero() {
   return (
     <SecondaryHeroWrapper>
-      <DecorativeSquare src="./assets/shared/pattern-square.svg" />
+      <DecorativeSquare src="./assets/shared/pattern-square.svg" alt="" />
       <ImagesWrapper>
         <PhoneAndKeyboardWrapper>
           <OrangeOverlay />
