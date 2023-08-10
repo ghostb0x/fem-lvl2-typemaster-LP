@@ -1,8 +1,8 @@
-import React from "react";
-import { styled } from "styled-components";
-import { FEATURE_CARDS } from "../../data";
-import FeatureCard from "../FeatureCard/FeatureCard";
-import { QUERIES } from "../../constants";
+import React from 'react';
+import { styled } from 'styled-components';
+import { FEATURE_CARDS } from '../../data';
+import FeatureCard from '../FeatureCard/FeatureCard';
+import { QUERIES } from '../../constants';
 
 function FeatureCards() {
   return (
@@ -13,7 +13,6 @@ function FeatureCards() {
           {...data}
         />
       ))}
-
     </FeatureCardsWrapper>
   );
 }
@@ -32,7 +31,12 @@ const FeatureCardsWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 70px;
     align-items: start;
-    
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin: 168px 165px 0px 165px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
 `;
 

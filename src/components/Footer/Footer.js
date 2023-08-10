@@ -1,6 +1,6 @@
-import React from "react";
-import { styled } from "styled-components";
-import { QUERIES } from "../../constants";
+import React from 'react';
+import { styled } from 'styled-components';
+import { QUERIES } from '../../constants';
 
 function Footer() {
   return (
@@ -17,28 +17,30 @@ const FooterWrapper = styled.footer`
   padding: 96px 50px 50px 50px;
 
   @media ${QUERIES.tabletAndUp} {
-    padding: 0 0 43px 0;
     margin-top: 142px;
-    
+    padding: 0 0 43px 0;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: 128px;
+    padding: 0 0 39px 0;
   }
 `;
 
-const P1 = styled.p `
+const P1 = styled.p`
   font: var(--font-body);
   font-weight: var(--font-weight-bold);
   color: var(--color-darkGray);
   white-space: pre;
-  
 
   &::after {
-    content: "  |  "
+    content: '  |  ';
   }
 `;
 
-const P2 = styled.p `
+const P2 = styled.p`
   font: var(--font-body);
   color: var(--color-darkGray);
-
 `;
 
 export default Footer;

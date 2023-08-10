@@ -72,7 +72,6 @@ const ImagesWrapper = styled.div`
     margin: 0;
     grid-template-columns: minmax(0, 3.64fr) minmax(0, 6.35fr);
     grid-template-rows: revert;
-
   }
 `;
 
