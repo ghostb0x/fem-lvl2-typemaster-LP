@@ -24,10 +24,7 @@ function MainHero() {
           alt="The Typemaster Keyboard - color image"
         />
       </HeroImageWrapper>
-      <DecorativeSquare
-        src="./assets/shared/pattern-square.svg"
-      />
-      
+      <DecorativeSquare src="./assets/shared/pattern-square.svg" />
     </HeroWrapper>
   );
 }
@@ -42,7 +39,7 @@ const HeroWrapper = styled.div`
 
   @media ${QUERIES.laptopAndUp} {
     margin-top: 83px;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 130px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 135px;
     gap: 30px;
     margin-left: 165px;
     overflow-x: clip;
@@ -60,7 +57,6 @@ const HeroContent = styled.div`
     padding: 60px 95px 108px 0;
   }
 `;
-
 
 const H1 = styled.h1`
   font: var(--font-h1-mobile);
@@ -83,6 +79,7 @@ const Paragraph = styled.p`
 
   @media ${QUERIES.laptopAndUp} {
     font: var(--font-hero-body-desktop);
+    margin: 24px 0 40px 0;
   }
 `;
 
@@ -95,6 +92,11 @@ const CTAWrapper = styled.div`
     justify-content: space-between;
     gap: 20px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    gap: 40px;
+    justify-content: revert;
+  }
 `;
 
 const HeroButton = styled(Button)`
@@ -102,7 +104,7 @@ const HeroButton = styled(Button)`
   background-color: var(--color-darkOrange);
 
   @media ${QUERIES.tabletAndUp} {
-    width: 175px;
+    min-width: 175px;
     height: 58px;
   }
 `;
@@ -137,6 +139,7 @@ const HeroImage = styled.img`
 
   @media ${QUERIES.laptopAndUp} {
     border-radius: 20px;
+    /* width: 90%; */
   }
 `;
 
@@ -144,15 +147,11 @@ const DecorativeSquare = styled.img`
   display: none;
   @media ${QUERIES.tabletAndUp} {
     display: none;
-    
   }
 
   @media ${QUERIES.laptopAndUp} {
     display: block;
-
-    
   }
-
 `;
 
 export default MainHero;

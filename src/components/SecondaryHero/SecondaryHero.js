@@ -5,13 +5,10 @@ import { QUERIES } from '../../constants';
 function SecondaryHero() {
   return (
     <SecondaryHeroWrapper>
+      <DecorativeSquare src="./assets/shared/pattern-square.svg" />
       <ImagesWrapper>
         <PhoneAndKeyboardWrapper>
           <OrangeOverlay />
-          {/* <PhoneAndKeyboard
-          src="./assets/mobile/image-phone-and-keyboard.jpg"
-          alt="The Typemaster Keyboard with a mobile phone"
-        /> */}
         </PhoneAndKeyboardWrapper>
 
         <GlassAndKeyboardWrapper>
@@ -33,7 +30,29 @@ function SecondaryHero() {
   );
 }
 
-const SecondaryHeroWrapper = styled.div``;
+const SecondaryHeroWrapper = styled.div`
+  @media ${QUERIES.laptopAndUp} {
+    margin-right: 165px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 135px minmax(0, 6.66fr) minmax(0, 3.333fr);
+    gap: 30px;
+    overflow-x: clip;
+  }
+`;
+
+const DecorativeSquare = styled.img`
+  display: none;
+  @media ${QUERIES.tabletAndUp} {
+    display: none;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    display: block;
+    align-self: flex-end;
+    justify-self: end;
+  }
+`;
 
 const ImagesWrapper = styled.div`
   margin-top: 24px;
@@ -47,6 +66,13 @@ const ImagesWrapper = styled.div`
     grid-template-columns: minmax(0, 0.96fr) minmax(0, 2fr);
     grid-template-rows: 320px;
     gap: 30px;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin: 0;
+    grid-template-columns: minmax(0, 3.64fr) minmax(0, 6.35fr);
+    grid-template-rows: revert;
+
   }
 `;
 
@@ -74,11 +100,6 @@ const OrangeOverlay = styled.div`
   }
 `;
 
-const PhoneAndKeyboard = styled.img`
-  width: 100%;
-  border-radius: 20px;
-`;
-
 const GlassAndKeyboardWrapper = styled.picture``;
 
 const GlassAndKeyboard = styled.img`
@@ -103,7 +124,14 @@ const SecondaryHeroTextSection = styled.div`
     grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.5fr);
     grid-template-rows: 108px;
     gap: 30px;
-    
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin: 0;
+    padding: 112px 0 99px 95px;
+    display: flex;
+    align-items: start;
+    text-align: start;
   }
 `;
 
