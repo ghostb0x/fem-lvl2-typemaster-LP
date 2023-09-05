@@ -5,30 +5,16 @@ import { QUERIES } from '../../constants';
 function SecondaryHero() {
   return (
     <SecondaryHeroWrapper>
-      <DecorativeSquare src="%PUBLIC_URL%/assets/shared/pattern-square.svg" alt="" />
+      <DecorativeSquare src="./assets/shared/pattern-square.svg" alt="" />
       <ImagesWrapper>
         <PhoneAndKeyboardWrapper>
-          <source
-            type="image/webp"
-            srcSet="
-            ./assets/mobile/keyboard-orange.webp 1x,
-            ./assets/tablet/keyboard-orange.webp 2x,
-            ./assets/desktop/keyboard-orange.webp 3x
-          "
-          />
-          <OrangeOverlayed 
-            src="./assets/mobile/keyboard-orange.webp"
+          <ExportedOrange 
+            src="./assets/desktop/keyboard-orange.png"
             alt="The Typemaster Keyboard beside a mobile phone"
           />
         </PhoneAndKeyboardWrapper>
 
         <GlassAndKeyboardWrapper>
-          <source
-            type="image/webp"
-            srcSet="
-            ./assets/desktop/image-glass-and-keyboard.webp 3x
-          "
-          />
           <source
             type="image/jpg"
             srcSet="
@@ -103,7 +89,7 @@ const PhoneAndKeyboardWrapper = styled.picture`
   position: relative;
 `;
 
-const OrangeOverlayed = styled.img`
+const ExportedOrange = styled.img`
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -119,31 +105,6 @@ const OrangeOverlayed = styled.img`
     border-radius: 20px;
   }
 `;
-
-// const OrangeOverlay = styled.div`
-//   background-color: var(--color-darkOrange);
-//   background-image: image-set(
-//     url('./assets/mobile/image-phone-and-keyboard.jpg') 1x,
-//     url('./assets/tablet/image-phone-and-keyboard.jpg') 2x,
-//     url('./assets/desktop/image-phone-and-keyboard.jpg') 3x
-//   );
-//   background-size: cover;
-//   background-blend-mode: multiply;
-//   background-repeat: no-repeat;
-//   position: absolute;
-//   top: 0;
-//   left: -24px;
-//   height: 100%;
-//   width: 100%;
-//   border-top-right-radius: 20px;
-//   border-bottom-right-radius: 20px;
-
-//   @media ${QUERIES.tabletAndUp} {
-//     left: revert;
-//     top: revert;
-//     border-radius: 20px;
-//   }
-// `;
 
 const GlassAndKeyboardWrapper = styled.picture``;
 

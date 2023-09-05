@@ -1,6 +1,6 @@
 {
-  "name": "new-app-name",
-  "version": "0.1.0",
+  "name": "typemaster-lp",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://ghostb0x.github.io/fem-lvl2-typemaster-LP",
   "dependencies": {
