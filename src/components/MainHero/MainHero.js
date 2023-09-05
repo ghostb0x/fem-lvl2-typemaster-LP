@@ -20,6 +20,12 @@ function MainHero() {
       </HeroContent>
       <HeroImageWrapper>
         <source
+          type="image/webp"
+          srcSet="
+            ./assets/desktop/image-keyboard.webp 3x
+          "
+        />
+        <source
           type="image/jpg"
           srcSet="
             ./assets/mobile/image-keyboard.jpg 1x,
@@ -120,6 +126,8 @@ const HeroButton = styled(Button)`
     height: 58px;
   }
 `;
+
+
 
 const CTASpan = styled.span`
   font: var(--font-button);

@@ -5,13 +5,30 @@ import { QUERIES } from '../../constants';
 function SecondaryHero() {
   return (
     <SecondaryHeroWrapper>
-      <DecorativeSquare src="./assets/shared/pattern-square.svg" alt="" />
+      <DecorativeSquare src="%PUBLIC_URL%/assets/shared/pattern-square.svg" alt="" />
       <ImagesWrapper>
         <PhoneAndKeyboardWrapper>
-          <OrangeOverlay />
+          <source
+            type="image/webp"
+            srcSet="
+            ./assets/mobile/keyboard-orange.webp 1x,
+            ./assets/tablet/keyboard-orange.webp 2x,
+            ./assets/desktop/keyboard-orange.webp 3x
+          "
+          />
+          <OrangeOverlayed 
+            src="./assets/mobile/keyboard-orange.webp"
+            alt="The Typemaster Keyboard beside a mobile phone"
+          />
         </PhoneAndKeyboardWrapper>
 
         <GlassAndKeyboardWrapper>
+          <source
+            type="image/webp"
+            srcSet="
+            ./assets/desktop/image-glass-and-keyboard.webp 3x
+          "
+          />
           <source
             type="image/jpg"
             srcSet="
@@ -84,6 +101,23 @@ const ImagesWrapper = styled.div`
 
 const PhoneAndKeyboardWrapper = styled.picture`
   position: relative;
+`;
+
+const OrangeOverlayed = styled.div`
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: -24px;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  @media ${QUERIES.tabletAndUp} {
+    left: revert;
+    top: revert;
+    border-radius: 20px;
+  }
 `;
 
 const OrangeOverlay = styled.div`
